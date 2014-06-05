@@ -1,0 +1,6 @@
+qtwebsockets-opensource-src (5.3.0-1) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Initial release (closes: #697509).
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 05 Jun 2014 14:32:27 +0400
