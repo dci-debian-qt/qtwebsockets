@@ -11,10 +11,10 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            Dmitry Shachnev <mitya57@gmail.com>
 Build-Depends: debhelper (>= 9.0.0),
                pkg-kde-tools,
-               qtbase5-private-dev (>= 5.3.0+dfsg~)
-Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.0+dfsg~),
-                     qtbase5-doc-html (>= 5.3.0~),
-                     qttools5-dev-tools (>= 5.3.0~)
+               qtbase5-private-dev (>= 5.3.1+dfsg~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg~),
+                     qtbase5-doc-html (>= 5.3.1~),
+                     qttools5-dev-tools (>= 5.3.1~)
 Standards-Version: 3.9.5
 Homepage: https://qt-project.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtwebsockets.git
