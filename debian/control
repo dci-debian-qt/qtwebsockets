@@ -18,7 +18,7 @@ Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg~),
 Standards-Version: 3.9.5
 Homepage: https://qt-project.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtwebsockets.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtwebsockets.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/qt/qtwebsockets.git
 
 Package: libqt5websockets5
 Architecture: any
