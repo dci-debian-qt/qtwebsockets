@@ -12,6 +12,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
 Build-Depends: debhelper (>= 9.0.0),
                pkg-kde-tools,
                qtbase5-private-dev (>= 5.3.2+dfsg~)
+               qtdeclarative5-dev (>= 5.3.2~)
 Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.2+dfsg~),
                      qtbase5-doc-html (>= 5.3.2~),
                      qttools5-dev-tools (>= 5.3.2~)
@@ -44,12 +45,23 @@ Description: Qt 5 Web Sockets module - development files
  This package contains the development files needed to build Qt applications
  using Qt 5 Web Sockets library.
 
+Package: qml-module-qt-websockets
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: libqt5websockets5, ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 Web Sockets QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Qt Web Sockets QML module.
+
 Package: qtwebsockets5-examples
 Architecture: any
 Multi-Arch: same
 Section: doc
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: qml-module-qtquick2, qml-module-qt-websockets, ${misc:Depends}, ${shlibs:Depends}
 Description: Examples for Qt 5 Web Sockets module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.

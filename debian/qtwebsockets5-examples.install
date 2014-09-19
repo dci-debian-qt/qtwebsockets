@@ -6,6 +6,10 @@ usr/lib/*/qt5/examples/websockets/echoserver/echoserver.cpp
 usr/lib/*/qt5/examples/websockets/echoserver/echoserver.h
 usr/lib/*/qt5/examples/websockets/echoserver/echoserver.pro
 usr/lib/*/qt5/examples/websockets/echoserver/main.cpp
+usr/lib/*/qt5/examples/websockets/qmlwebsocketclient/data.qrc
+usr/lib/*/qt5/examples/websockets/qmlwebsocketclient/main.cpp
+usr/lib/*/qt5/examples/websockets/qmlwebsocketclient/qml/qmlwebsocketclient/main.qml
+usr/lib/*/qt5/examples/websockets/qmlwebsocketclient/qmlwebsocketclient.pro
 usr/lib/*/qt5/examples/websockets/simplechat/chatserver.cpp
 usr/lib/*/qt5/examples/websockets/simplechat/chatserver.h
 usr/lib/*/qt5/examples/websockets/simplechat/main.cpp
