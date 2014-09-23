@@ -1,5 +1,8 @@
 qtwebsockets-opensource-src (5.3.2-4) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Fix some tests to work on kfreebsd. Thanks Adam Majer for the patch!
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 23 Sep 2014 15:10:29 -0300
 
 qtwebsockets-opensource-src (5.3.2-3) unstable; urgency=medium
