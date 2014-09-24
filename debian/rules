@@ -44,7 +44,7 @@ override_dh_auto_install-arch:
 # See https://bugreports.qt-project.org/browse/QTBUG-41448
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(disable_test_architecures)))
 override_dh_auto_test:
-	echo "Tests disabled on kfreebsd-*, \
+	echo "Tests disabled on $(disable_test_architecures), \
 	see https://bugreports.qt-project.org/browse/QTBUG-41448"
 endif
 
