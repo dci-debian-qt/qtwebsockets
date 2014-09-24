@@ -10,6 +10,8 @@ export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildfla
 export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 export QT_SELECT := qt5
 
+disable_test_architecures := kfreebsd-i386 kfreebsd-amd64
+
 %:
 	dh $@ --parallel --with pkgkde_symbolshelper --dbg-package=qtwebsockets5-dbg
 
@@ -37,6 +39,14 @@ override_dh_auto_install-arch:
 
 	# Remove libtool-like files
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
+
+# Disable tests on kfreebsd-*, they are not right.
+# See https://bugreports.qt-project.org/browse/QTBUG-41448
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(disable_test_architecures)))
+override_dh_auto_test:
+	echo "Tests disabled on kfreebsd-*, \
+	see https://bugreports.qt-project.org/browse/QTBUG-41448"
+endif
 
 override_dh_auto_install-indep:
 	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
