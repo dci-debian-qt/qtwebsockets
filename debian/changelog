@@ -1,3 +1,9 @@
+qtwebsockets-opensource-src (5.3.2-5~bpo70+1) wheezy-backports; urgency=medium
+
+  * Upload to wheezy-backports.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 09 Oct 2014 15:06:44 -0300
+
 qtwebsockets-opensource-src (5.3.2-5) unstable; urgency=medium
 
   * Disable tests on kfreebsd-*, we now they are not right. See
