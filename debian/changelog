@@ -8,6 +8,7 @@ qtwebsockets-opensource-src (5.4.0-1) UNRELEASED; urgency=medium
     anyway.
   * Bump Standards-Version to 3.9.6, no changes needed.
   * Update qtwebsockets5-examples.install.
+  * Update libqt5websockets5.symbols.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Dec 2014 14:56:15 +0300
 
