@@ -7,6 +7,7 @@ qtwebsockets-opensource-src (5.4.0-1) UNRELEASED; urgency=medium
   * Disable fix_kfreebsd_test.patch, as we skip tests on kfreebsd
     anyway.
   * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update qtwebsockets5-examples.install.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Dec 2014 14:56:15 +0300
 
