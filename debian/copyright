@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: qtwebsockets-opensource-src
-Source: http://releases.qt-project.org/qt5/*/submodules/
+Source: https://download.qt.io/official_releases/qt/*/submodules/
 
 Files: debian/*
 Copyright: 2007-2012 Fathi Boudra <fabo@debian.org>
