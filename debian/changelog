@@ -1,11 +1,10 @@
-qtwebsockets-opensource-src (5.4.1-1) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.4.1-1) experimental; urgency=medium
 
-  [ Timo Jyrinki ]
   * New upstream release.
   * Update debian/copyright.
   * Bump Qt build-dependencies to 5.4.1.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 04 Mar 2015 13:54:31 +0000
+ -- Timo Jyrinki <timo@debian.org>  Wed, 04 Mar 2015 14:02:24 +0000
 
 qtwebsockets-opensource-src (5.4.0-2) experimental; urgency=medium
 
