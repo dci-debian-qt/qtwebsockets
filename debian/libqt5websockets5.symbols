@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.3.0 amd64
+# SymbolsHelper-Confirmed: 5.4.0 amd64
 libQt5WebSockets.so.5 libqt5websockets5 #MINVER#
  _ZN10QWebSocket11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.3.0
  _ZN10QWebSocket11qt_metacastEPKc@Base 5.3.0
@@ -116,6 +116,7 @@ libQt5WebSockets.so.5 libqt5websockets5 #MINVER#
  _ZNK16QWebSocketServer21maxPendingConnectionsEv@Base 5.3.0
  _ZNK16QWebSocketServer5errorEv@Base 5.3.0
  _ZNK16QWebSocketServer5proxyEv@Base 5.3.0
+ _ZNK16QWebSocketServer9serverUrlEv@Base 5.4.0
  _ZNK27QWebSocketCorsAuthenticator6originEv@Base 5.3.0
  _ZNK27QWebSocketCorsAuthenticator7allowedEv@Base 5.3.0
  _ZTI10QWebSocket@Base 5.3.0
