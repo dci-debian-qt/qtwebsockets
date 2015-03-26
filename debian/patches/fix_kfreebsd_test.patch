@@ -6,9 +6,11 @@ Bug-Qt: https://bugreports.qt-project.org/browse/QTBUG-41448
  tests/auto/qwebsocket/tst_qwebsocket.cpp |   31 ++++++++++++++++++++++++++++---
  1 file changed, 28 insertions(+), 3 deletions(-)
 
---- a/tests/auto/qwebsocket/tst_qwebsocket.cpp
-+++ b/tests/auto/qwebsocket/tst_qwebsocket.cpp
-@@ -246,6 +246,7 @@ void tst_QWebSocket::tst_invalidOpen_dat
+Index: qtwebsockets/tests/auto/qwebsocket/tst_qwebsocket.cpp
+===================================================================
+--- qtwebsockets.orig/tests/auto/qwebsocket/tst_qwebsocket.cpp
++++ qtwebsockets/tests/auto/qwebsocket/tst_qwebsocket.cpp
+@@ -236,6 +236,7 @@ void tst_QWebSocket::tst_invalidOpen_dat
      QTest::addColumn<QString>("expectedUrl");
      QTest::addColumn<QString>("expectedPeerName");
      QTest::addColumn<QString>("expectedResourceName");
@@ -16,7 +18,7 @@ Bug-Qt: https://bugreports.qt-project.org/browse/QTBUG-41448
      QTest::addColumn<QAbstractSocket::SocketState>("stateAfterOpenCall");
      QTest::addColumn<int>("disconnectedCount");
      QTest::addColumn<int>("stateChangedCount");
-@@ -253,18 +254,28 @@ void tst_QWebSocket::tst_invalidOpen_dat
+@@ -243,18 +244,28 @@ void tst_QWebSocket::tst_invalidOpen_dat
      QTest::newRow("Illegal local address")
              << QStringLiteral("ws://127.0.0.1:1/") << QStringLiteral("ws://127.0.0.1:1/")
              << QStringLiteral("127.0.0.1")
@@ -47,7 +49,7 @@ Bug-Qt: https://bugreports.qt-project.org/browse/QTBUG-41448
              << QAbstractSocket::UnconnectedState
              << 0 << 0;
  }
-@@ -275,6 +286,7 @@ void tst_QWebSocket::tst_invalidOpen()
+@@ -265,6 +276,7 @@ void tst_QWebSocket::tst_invalidOpen()
      QFETCH(QString, expectedUrl);
      QFETCH(QString, expectedPeerName);
      QFETCH(QString, expectedResourceName);
@@ -55,7 +57,7 @@ Bug-Qt: https://bugreports.qt-project.org/browse/QTBUG-41448
      QFETCH(QAbstractSocket::SocketState, stateAfterOpenCall);
      QFETCH(int, disconnectedCount);
      QFETCH(int, stateChangedCount);
-@@ -298,7 +310,8 @@ void tst_QWebSocket::tst_invalidOpen()
+@@ -288,7 +300,8 @@ void tst_QWebSocket::tst_invalidOpen()
      QCOMPARE(socket.version(), QWebSocketProtocol::VersionLatest);
      //at this point the socket is in a connecting state
      //so, there should no error at this point
@@ -65,7 +67,7 @@ Bug-Qt: https://bugreports.qt-project.org/browse/QTBUG-41448
      QVERIFY(!socket.errorString().isEmpty());
      QVERIFY(!socket.isValid());
      QVERIFY(socket.localAddress().isNull());
-@@ -365,7 +378,13 @@ void tst_QWebSocket::tst_invalidOrigin()
+@@ -355,7 +368,13 @@ void tst_QWebSocket::tst_invalidOrigin()
  
      //at this point the socket is in a connecting state
      //so, there should no error at this point
@@ -79,7 +81,7 @@ Bug-Qt: https://bugreports.qt-project.org/browse/QTBUG-41448
      QVERIFY(!socket.errorString().isEmpty());
      QVERIFY(!socket.isValid());
      QVERIFY(socket.localAddress().isNull());
-@@ -374,13 +393,19 @@ void tst_QWebSocket::tst_invalidOrigin()
+@@ -364,13 +383,19 @@ void tst_QWebSocket::tst_invalidOrigin()
      QVERIFY(socket.peerAddress().isNull());
      QCOMPARE(socket.peerPort(), quint16(0));
      QCOMPARE(socket.peerName(), QStringLiteral("127.0.0.1"));
