@@ -1,6 +1,5 @@
-qtwebsockets-opensource-src (5.4.2-1) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.4.2-1) experimental; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
     - Bump Qt build dependencies.
   * Clear up the list in Uploaders removing people who hasn't committed to the
@@ -11,7 +10,7 @@ qtwebsockets-opensource-src (5.4.2-1) UNRELEASED; urgency=medium
     - Remove empty debian/patches.
   * Update examples install file.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Mar 2015 09:21:24 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 03 Jun 2015 18:04:41 -0300
 
 qtwebsockets-opensource-src (5.4.1-1) experimental; urgency=medium
 
