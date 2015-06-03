@@ -1,3 +1,6 @@
+usr/lib/*/qt5/examples/websockets/sslechoserver/localhost.cert
+usr/lib/*/qt5/examples/websockets/sslechoserver/securesocketclient.qrc
+usr/lib/*/qt5/examples/websockets/sslechoserver/localhost.key
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.cpp
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.h
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.pro
