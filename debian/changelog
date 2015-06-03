@@ -8,6 +8,7 @@ qtwebsockets-opensource-src (5.4.2-1) UNRELEASED; urgency=medium
     (and we really hope to see you back really soon!).
   * Export HTML documentation.
   * Remove fix_qwebsocket_test.diff, applied upstream.
+    - Remove empty debian/patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Mar 2015 09:21:24 -0300
 
