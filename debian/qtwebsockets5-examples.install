@@ -1,3 +1,6 @@
+usr/lib/*/qt5/examples/websockets/sslechoserver/localhost.cert
+usr/lib/*/qt5/examples/websockets/sslechoserver/securesocketclient.qrc
+usr/lib/*/qt5/examples/websockets/sslechoserver/localhost.key
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.cpp
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.h
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.pro
@@ -10,6 +13,10 @@ usr/lib/*/qt5/examples/websockets/qmlwebsocketclient/data.qrc
 usr/lib/*/qt5/examples/websockets/qmlwebsocketclient/main.cpp
 usr/lib/*/qt5/examples/websockets/qmlwebsocketclient/qml/qmlwebsocketclient/main.qml
 usr/lib/*/qt5/examples/websockets/qmlwebsocketclient/qmlwebsocketclient.pro
+usr/lib/*/qt5/examples/websockets/qmlwebsocketserver/data.qrc
+usr/lib/*/qt5/examples/websockets/qmlwebsocketserver/main.cpp
+usr/lib/*/qt5/examples/websockets/qmlwebsocketserver/qml/qmlwebsocketserver/main.qml
+usr/lib/*/qt5/examples/websockets/qmlwebsocketserver/qmlwebsocketserver.pro
 usr/lib/*/qt5/examples/websockets/simplechat/chatserver.cpp
 usr/lib/*/qt5/examples/websockets/simplechat/chatserver.h
 usr/lib/*/qt5/examples/websockets/simplechat/main.cpp
