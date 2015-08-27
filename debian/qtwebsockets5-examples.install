@@ -1,6 +1,3 @@
-usr/lib/*/qt5/examples/websockets/sslechoserver/localhost.cert
-usr/lib/*/qt5/examples/websockets/sslechoserver/securesocketclient.qrc
-usr/lib/*/qt5/examples/websockets/sslechoserver/localhost.key
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.cpp
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.h
 usr/lib/*/qt5/examples/websockets/echoclient/echoclient.pro
@@ -25,7 +22,10 @@ usr/lib/*/qt5/examples/websockets/sslechoclient/main.cpp
 usr/lib/*/qt5/examples/websockets/sslechoclient/sslechoclient.cpp
 usr/lib/*/qt5/examples/websockets/sslechoclient/sslechoclient.h
 usr/lib/*/qt5/examples/websockets/sslechoclient/sslechoclient.pro
+usr/lib/*/qt5/examples/websockets/sslechoserver/localhost.cert
+usr/lib/*/qt5/examples/websockets/sslechoserver/localhost.key
 usr/lib/*/qt5/examples/websockets/sslechoserver/main.cpp
+usr/lib/*/qt5/examples/websockets/sslechoserver/securesocketclient.qrc
 usr/lib/*/qt5/examples/websockets/sslechoserver/sslechoserver.cpp
 usr/lib/*/qt5/examples/websockets/sslechoserver/sslechoserver.h
 usr/lib/*/qt5/examples/websockets/sslechoserver/sslechoserver.pro
