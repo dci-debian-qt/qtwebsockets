@@ -13,6 +13,7 @@ qtwebsockets-opensource-src (5.5.0-1) UNRELEASED; urgency=medium
     - Add new qml-module-qtwebsockets binary package.
     - Move qml-module-qt-websockets to oldlibs section.
     - Make qml-module-qt-websockets depend on qml-module-qtwebsockets.
+    - Update dependency of qtwebsockets5-examples package.
   * No-change wrap and sort.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Aug 2015 14:28:20 +0300
