@@ -43,16 +43,30 @@ Description: Qt 5 Web Sockets module - development files
  This package contains the development files needed to build Qt applications
  using Qt 5 Web Sockets library.
 
-Package: qml-module-qt-websockets
+Package: qml-module-qtwebsockets
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: libqt5websockets5, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 Web Sockets QML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the Qt Web Sockets QML module.
+
+Package: qml-module-qt-websockets
+Architecture: any
+Multi-Arch: same
+Section: oldlibs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: qml-module-qtwebsockets, ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 Web Sockets compatibility QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the compatibility Qt.WebSockets QML module. Do
+ not use it, use QtWebSockets module instead (in qml-module-qtwebsockets
+ package).
 
 Package: qtwebsockets5-examples
 Architecture: any
