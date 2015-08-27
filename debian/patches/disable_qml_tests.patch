@@ -1,0 +1,14 @@
+Description: do not run QML tests, to avoid dependency on Xvfb
+Author: Timo Jyrinki <timo@debian.org>
+Forwarded: not-needed
+Last-Update: 2015-08-27
+
+--- a/tests/auto/auto.pro
++++ b/tests/auto/auto.pro
+@@ -2,6 +2,3 @@
+ 
+ SUBDIRS += cmake websockets
+ 
+-qtHaveModule(quick) {
+-    SUBDIRS += qml
+-}
