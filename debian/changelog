@@ -5,6 +5,7 @@ qtwebsockets-opensource-src (5.5.0-1) UNRELEASED; urgency=medium
   * Update debian/copyright.
   * Bump Qt build-dependencies to 5.5.0.
   * Run the tests on kfreebsd, just ignore the tests result.
+  * Do not run tests during arch-indep build.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Aug 2015 14:28:20 +0300
 
