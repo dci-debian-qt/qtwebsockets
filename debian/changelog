@@ -1,10 +1,41 @@
-qtwebsockets-opensource-src (5.4.1-2) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.5.0-1) experimental; urgency=medium
 
-  [ Rohan Garg ]
-  * Simplify install file for the examples package
-  * Drop all patches, applied upstream
+  * New upstream release.
+  * Update debian/copyright.
+  * Bump Qt build-dependencies to 5.5.0.
+  * Run the tests on kfreebsd, just ignore the tests result.
+  * Do not run tests during arch-indep build.
+  * Do not run QML tests, to avoid dependency on Xvfb
+    (disable_qml_tests.patch; patch taken from Ubuntu).
+  * Upstream has renamed Qt.WebSockets QML module to QtWebSockets
+    (Qt.WebSockets still exists as a compatibility layer).
+    - Add new qml-module-qtwebsockets binary package.
+    - Move qml-module-qt-websockets to oldlibs section.
+    - Make qml-module-qt-websockets depend on qml-module-qtwebsockets.
+    - Update dependency of qtwebsockets5-examples package.
+  * No-change wrap and sort.
 
- -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 26 Mar 2015 13:17:21 +0100
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 27 Aug 2015 15:36:52 +0300
+
+qtwebsockets-opensource-src (5.4.2-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 24 Jun 2015 18:07:41 -0300
+
+qtwebsockets-opensource-src (5.4.2-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Bump Qt build dependencies.
+  * Clear up the list in Uploaders removing people who hasn't committed to the
+    repo in more than a year. They can re add themselves whenever they want
+    (and we really hope to see you back really soon!).
+  * Export HTML documentation.
+  * Remove fix_qwebsocket_test.diff, applied upstream.
+    - Remove empty debian/patches.
+  * Update examples install file.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 03 Jun 2015 18:04:41 -0300
 
 qtwebsockets-opensource-src (5.4.1-1) experimental; urgency=medium
 

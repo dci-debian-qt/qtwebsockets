@@ -39,12 +39,14 @@ override_dh_auto_install-arch:
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
 
 # Disable tests on kfreebsd-*, they are not right.
-# See https://bugreports.qt-project.org/browse/QTBUG-41448
+# See https://bugreports.qt.io/browse/QTBUG-41448
 ifeq ($(DEB_HOST_ARCH_OS),kfreebsd)
-override_dh_auto_test:
-	echo "Tests disabled on kfreebsd, \
-	see https://bugreports.qt-project.org/browse/QTBUG-41448"
+override_dh_auto_test-arch:
+	-dh_auto_test
 endif
+
+# Do not run tests during arch-indep build
+override_dh_auto_test-indep:
 
 override_dh_auto_install-indep:
 	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
