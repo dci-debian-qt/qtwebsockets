@@ -22,7 +22,7 @@ Last-Update: 2015-10-19
      socket->asyncClose();
  
 -    QCOMPARE(timer.isActive(), false);
-+    QTRY_COMPARE_WITH_TIMEOUT(loop.isRunning(), false, 200)
++    QTRY_COMPARE_WITH_TIMEOUT(loop.isRunning(), false, 200);
      QCOMPARE(socket->receivedMessage, textMessage);
  
      socket->deleteLater();
