@@ -1,5 +1,7 @@
 Description: use QTRY_COMPARE where needed to add 5-seconds timeout
 Origin: upstream, http://code.qt.io/cgit/qt/qtwebsockets.git/commit/?id=a5cb3b8ff10fcf1d
+ The second hunk is proposed by Liang Qi in https://codereview.qt-project.org/138251,
+ pending review.
 Last-Update: 2015-10-19
 
 --- a/tests/auto/websockets/qwebsocket/tst_qwebsocket.cpp
@@ -15,3 +17,12 @@ Last-Update: 2015-10-19
      QList<QVariant> arguments = errorSpy.takeFirst();
      QAbstractSocket::SocketError socketError =
              qvariant_cast<QAbstractSocket::SocketError>(arguments.at(0));
+@@ -668,7 +666,7 @@
+ 
+     socket->asyncClose();
+ 
+-    QCOMPARE(timer.isActive(), false);
++    QTRY_COMPARE_WITH_TIMEOUT(loop.isRunning(), false, 200)
+     QCOMPARE(socket->receivedMessage, textMessage);
+ 
+     socket->deleteLater();
