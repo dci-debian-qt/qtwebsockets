@@ -1,9 +1,8 @@
-qtwebsockets-opensource-src (5.5.1-3) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.5.1-3) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Fix previous upload by adding the missing semicolon.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Oct 2015 14:11:58 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 19 Oct 2015 14:13:00 +0300
 
 qtwebsockets-opensource-src (5.5.1-2) experimental; urgency=medium
 
