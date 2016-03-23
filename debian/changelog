@@ -7,6 +7,7 @@ qtwebsockets-opensource-src (5.6.0-1) UNRELEASED; urgency=medium
   * Drop no longer needed hack to fix wrong path in pkgconfig files.
   * Use https for Vcs fields.
   * Update libqt5websockets5.symbols for 5.6.
+  * Bump Standards-Version to 3.9.7, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 Mar 2016 22:37:27 +0100
 
