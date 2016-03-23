@@ -1,6 +1,5 @@
-qtwebsockets-opensource-src (5.6.0-1) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.6.0-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Drop qtry_compare.patch, applied upstream.
   * Bump Qt build-dependencies to 5.6.0.
@@ -10,7 +9,7 @@ qtwebsockets-opensource-src (5.6.0-1) UNRELEASED; urgency=medium
   * Bump Standards-Version to 3.9.7, no changes needed.
   * Fix the order of entries in debian/copyright.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 Mar 2016 22:37:27 +0100
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 23 Mar 2016 23:23:08 +0100
 
 qtwebsockets-opensource-src (5.5.1-4) unstable; urgency=medium
 
