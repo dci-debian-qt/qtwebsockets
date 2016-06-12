@@ -1,12 +1,11 @@
-qtwebsockets-opensource-src (5.6.1-1) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.6.1-1) experimental; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
     - Bump Qt build dependencies.
   * Bump Standards-Version to 3.9.8, no changes required.
   * Simplify qtwebsockets5-examples.install, examples have all the same path.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jun 2016 17:31:17 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 12 Jun 2016 17:44:20 -0300
 
 qtwebsockets-opensource-src (5.6.0-1) experimental; urgency=medium
 
