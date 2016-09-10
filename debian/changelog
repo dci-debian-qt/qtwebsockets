@@ -1,4 +1,4 @@
-qtwebsockets-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.7.0-1) experimental; urgency=medium
 
   [ Simon Quigley ]
   * New upstream release.
@@ -9,7 +9,7 @@ qtwebsockets-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Switch to automatic dbgsym packages.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 10 Sep 2016 05:25:12 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 10 Sep 2016 06:43:43 -0500
 
 qtwebsockets-opensource-src (5.6.1-2) unstable; urgency=medium
 
