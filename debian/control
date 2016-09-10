@@ -7,7 +7,7 @@ Uploaders: Sune Vuorela <debian@pusling.com>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Timo Jyrinki <timo@debian.org>,
            Dmitry Shachnev <mitya57@debian.org>
-Build-Depends: debhelper (>= 9.0.0),
+Build-Depends: debhelper (>= 9.20160114~),
                pkg-kde-tools,
                qtbase5-private-dev (>= 5.7.0+dfsg~),
                qtdeclarative5-dev (>= 5.7.0~)
@@ -82,19 +82,6 @@ Description: Examples for Qt 5 Web Sockets module
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains examples for the Qt 5 Web Sockets library.
-
-Package: qtwebsockets5-dbg
-Priority: extra
-Architecture: any
-Multi-Arch: same
-Section: debug
-Depends: libqt5websockets5 (= ${binary:Version}), ${misc:Depends}
-Description: Qt 5 Web Sockets library debugging symbols
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the debugging symbols for the Qt 5 Web Sockets
- library.
 
 Package: qtwebsockets5-doc
 Architecture: all
