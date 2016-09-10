@@ -5,7 +5,7 @@ Last-Update: 2015-08-27
 
 --- a/tests/auto/auto.pro
 +++ b/tests/auto/auto.pro
-@@ -2,6 +2,3 @@
+@@ -2,6 +2,3 @@ TEMPLATE = subdirs
  
  SUBDIRS += cmake websockets
  
