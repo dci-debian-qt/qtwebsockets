@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.7.1 amd64
+# SymbolsHelper-Confirmed: 5.7.1 amd64 arm64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el powerpc ppc64el s390x sparc64
 libQt5WebSockets.so.5 libqt5websockets5 #MINVER#
  Qt_5.0@Qt_5.0 5.6.0
  Qt_5.1@Qt_5.1 5.6.0

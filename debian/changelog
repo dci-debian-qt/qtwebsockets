@@ -1,5 +1,8 @@
 qtwebsockets-opensource-src (5.7.1~20161021-3) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Update symbols files with buildds' logs.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Nov 2016 09:18:15 -0300
 
 qtwebsockets-opensource-src (5.7.1~20161021-2) experimental; urgency=medium
