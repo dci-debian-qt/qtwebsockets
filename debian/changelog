@@ -1,5 +1,9 @@
 qtwebsockets-opensource-src (5.7.1~20161021-4) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Build depend upon libssl1.0-dev. Tests use libssl and when libssl1.1 is
+    present they fail.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 04 Nov 2016 11:37:33 -0300
 
 qtwebsockets-opensource-src (5.7.1~20161021-3) unstable; urgency=medium
