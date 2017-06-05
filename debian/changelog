@@ -1,3 +1,9 @@
+qtwebsockets-opensource-src (5.9.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 04 Jun 2017 20:34:01 -0500
+
 qtwebsockets-opensource-src (5.7.1~20161021-4) unstable; urgency=medium
 
   * Build depend upon libssl1.0-dev. Tests use libssl and when libssl1.1 is
