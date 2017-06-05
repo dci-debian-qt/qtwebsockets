@@ -3,6 +3,7 @@ qtwebsockets-opensource-src (5.9.0-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Build now needs private QML headers; install qtdeclarative5-private-dev
     accordingly.
+  * Install the new QWebSocketProtocol file in the development headers.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 04 Jun 2017 20:34:01 -0500
 
