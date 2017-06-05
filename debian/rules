@@ -36,10 +36,10 @@ override_dh_auto_install-arch:
 
 # Disable tests on kfreebsd-*, they are not right.
 # See https://bugreports.qt.io/browse/QTBUG-41448
-ifeq ($(DEB_HOST_ARCH_OS),kfreebsd)
+
 override_dh_auto_test-arch:
 	-dh_auto_test
-endif
+
 
 # Do not run tests during arch-indep build
 override_dh_auto_test-indep:
