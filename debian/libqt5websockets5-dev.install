@@ -1,6 +1,7 @@
 usr/include/*/qt5/QtWebSockets/QMaskGenerator
 usr/include/*/qt5/QtWebSockets/QWebSocket
 usr/include/*/qt5/QtWebSockets/QWebSocketCorsAuthenticator
+usr/include/*/qt5/QtWebSockets/QWebSocketProtocol
 usr/include/*/qt5/QtWebSockets/QWebSocketServer
 usr/include/*/qt5/QtWebSockets/QtWebSockets
 usr/include/*/qt5/QtWebSockets/QtWebSocketsDepends
