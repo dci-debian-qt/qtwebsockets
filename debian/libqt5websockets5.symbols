@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.7.1~20161021 amd64 arm64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390x sparc64
+# SymbolsHelper-Confirmed: 5.9.0 amd64
 libQt5WebSockets.so.5 libqt5websockets5 #MINVER#
  Qt_5.0@Qt_5.0 5.6.0
  Qt_5.1@Qt_5.1 5.6.0
@@ -8,6 +8,8 @@ libQt5WebSockets.so.5 libqt5websockets5 #MINVER#
  Qt_5.5@Qt_5.5 5.6.0
  Qt_5.6@Qt_5.6 5.6.0
  Qt_5.7@Qt_5.7 5.7.1
+ Qt_5.8@Qt_5.8 5.9.0
+ Qt_5.9@Qt_5.9 5.9.0
  Qt_5@Qt_5 5.6.0
  Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.0
  _ZN10QWebSocket11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0
@@ -31,6 +33,7 @@ libQt5WebSockets.so.5 libqt5websockets5 #MINVER#
  _ZN10QWebSocket19textMessageReceivedERK7QString@Qt_5 5.6.0
  _ZN10QWebSocket21binaryMessageReceivedERK10QByteArray@Qt_5 5.6.0
  _ZN10QWebSocket27proxyAuthenticationRequiredERK13QNetworkProxyP14QAuthenticator@Qt_5 5.6.0
+ _ZN10QWebSocket34preSharedKeyAuthenticationRequiredEP29QSslPreSharedKeyAuthenticator@Qt_5 5.9.0
  _ZN10QWebSocket4openERK15QNetworkRequest@Qt_5 5.6.0
  _ZN10QWebSocket4openERK4QUrl@Qt_5 5.6.0
  _ZN10QWebSocket4pingERK10QByteArray@Qt_5 5.6.0
@@ -70,6 +73,7 @@ libQt5WebSockets.so.5 libqt5websockets5 #MINVER#
  _ZN16QWebSocketServer21nextPendingConnectionEv@Qt_5 5.6.0
  _ZN16QWebSocketServer24setMaxPendingConnectionsEi@Qt_5 5.6.0
  _ZN16QWebSocketServer28originAuthenticationRequiredEP27QWebSocketCorsAuthenticator@Qt_5 5.6.0
+ _ZN16QWebSocketServer34preSharedKeyAuthenticationRequiredEP29QSslPreSharedKeyAuthenticator@Qt_5 5.9.0
  _ZN16QWebSocketServer5closeEv@Qt_5 5.6.0
  _ZN16QWebSocketServer6closedEv@Qt_5 5.6.0
  _ZN16QWebSocketServer6listenERK12QHostAddresst@Qt_5 5.6.0
@@ -121,6 +125,7 @@ libQt5WebSockets.so.5 libqt5websockets5 #MINVER#
  _ZNK16QWebSocketServer11errorStringEv@Qt_5 5.6.0
  _ZNK16QWebSocketServer11isListeningEv@Qt_5 5.6.0
  _ZNK16QWebSocketServer13serverAddressEv@Qt_5 5.6.0
+ _ZNK16QWebSocketServer16handleConnectionEP10QTcpSocket@Qt_5 5.9.0
  _ZNK16QWebSocketServer16socketDescriptorEv@Qt_5 5.6.0
  _ZNK16QWebSocketServer16sslConfigurationEv@Qt_5 5.6.0
  _ZNK16QWebSocketServer17supportedVersionsEv@Qt_5 5.6.0
