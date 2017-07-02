@@ -3,6 +3,7 @@ qtwebsockets-opensource-src (5.9.1-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream patch release.
   * Bump Qt build-dependencies to 5.9.1.
+  * Run QML tests during build, drop disable_qml_tests.patch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Jul 2017 16:18:07 +0300
 
