@@ -15,7 +15,7 @@ export QT_SELECT := qt5
 
 override_dh_auto_clean:
 	dh_auto_clean
-	rm -rfv doc lib mkspecs
+	rm -rfv doc lib mkspecs test_root
 	rm -fv include/QtWebSockets/QtWebSocketsDepends
 
 override_dh_auto_configure:
@@ -34,12 +34,17 @@ override_dh_auto_install-arch:
 	# Remove libtool-like files
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
 
+override_dh_auto_test-arch:
+	$(MAKE) install -Csrc/imports INSTALL_ROOT=$(CURDIR)/test_root
 # Disable tests on kfreebsd-*, they are not right.
 # See https://bugreports.qt.io/browse/QTBUG-41448
-
-override_dh_auto_test-arch:
-	-dh_auto_test
-
+ifeq ($(DEB_HOST_ARCH_OS),kfreebsd)
+	-LD_LIBRARY_PATH=$(CURDIR)/lib QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml \
+		xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" dh_auto_test -- -Ctests/auto
+else
+	LD_LIBRARY_PATH=$(CURDIR)/lib QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml \
+		xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" dh_auto_test -- -Ctests/auto
+endif
 
 # Do not run tests during arch-indep build
 override_dh_auto_test-indep:
