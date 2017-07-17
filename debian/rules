@@ -40,10 +40,12 @@ override_dh_auto_test-arch:
 # See https://bugreports.qt.io/browse/QTBUG-41448
 ifeq ($(DEB_HOST_ARCH_OS),kfreebsd)
 	-LD_LIBRARY_PATH=$(CURDIR)/lib QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml \
-		xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" dh_auto_test -- -Ctests/auto
+		xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" \
+		dh_auto_test --max-parallel=1 -- -Ctests/auto
 else
 	LD_LIBRARY_PATH=$(CURDIR)/lib QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml \
-		xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" dh_auto_test -- -Ctests/auto
+		xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" \
+		dh_auto_test --max-parallel=1 -- -Ctests/auto
 endif
 
 # Do not run tests during arch-indep build
