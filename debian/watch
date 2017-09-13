@@ -1,2 +1,5 @@
 version=3
-https://download.qt.io/official_releases/qt/([\d\.]*)/([\d\.]*)/submodules/qtwebsockets-opensource-src-([^-]*)\.tar\.xz
+opts=uversionmangle=s/-/~/,dversionmangle=s/\+dfsg//,repacksuffix=+dfsg \
+https://download.qt.io/official_releases/qt/([\d\.]*)/([\d\.\-a-z]*)/submodules/qtwebsockets-everywhere-src-(.*)\.tar\.xz
+opts=uversionmangle=s/-/~/,dversionmangle=s/\+dfsg//,repacksuffix=+dfsg \
+https://download.qt.io/development_releases/qt/([\d\.]*)/([\d\.\-a-z]*)/submodules/qtwebsockets-everywhere-src-(.*)\.tar\.xz
