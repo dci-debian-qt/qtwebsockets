@@ -1,3 +1,18 @@
+qtwebsockets-opensource-src (5.9.1-3) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 16 Aug 2017 14:44:02 -0300
+
+qtwebsockets-opensource-src (5.9.1-2) experimental; urgency=medium
+
+  * Run the tests with --max-parallel=1 in hope it will reduce the
+    number of test failures.
+  * Temporarily ignore the tests results on armhf (not reproducible on
+    porterbox) and mips (see #868745), to make the transition possible.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 18 Jul 2017 11:27:35 +0300
+
 qtwebsockets-opensource-src (5.9.1-1) experimental; urgency=medium
 
   * New upstream patch release.
