@@ -3,6 +3,7 @@ qtwebsockets-opensource-src (5.9.2-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream release.
   * Bump Qt build-dependencies to 5.9.2.
+  * Use debhelper compat level 10 and dh_missing.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 15 Oct 2017 18:13:55 +0300
 
