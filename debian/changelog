@@ -1,5 +1,7 @@
 qtwebsockets-opensource-src (5.9.2-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Make the tests results not fatal also on mips64el.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 28 Oct 2017 11:22:01 +0300
 
