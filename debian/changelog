@@ -1,3 +1,9 @@
+qtwebsockets-opensource-src (5.9.2-0neon) UNRELEASED; urgency=medium
+
+  * New release
+
+ -- Jonathan Riddell <jr@jriddell.org>  Fri, 10 Nov 2017 11:41:41 +0000
+
 qtwebsockets-opensource-src (5.9.1-1) experimental; urgency=medium
 
   * New upstream patch release.
