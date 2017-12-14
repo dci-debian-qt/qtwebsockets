@@ -1,6 +1,7 @@
 qtwebsockets-opensource-src (5.9.3-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Bump build dependencies to Qt 5.9.3.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 13 Dec 2017 21:38:02 -0600
 
