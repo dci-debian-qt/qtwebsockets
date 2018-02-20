@@ -9,6 +9,7 @@ qtwebsockets-opensource-src (5.10.1-1) UNRELEASED; urgency=medium
   * Add Qt_5.10 version tag to debian/libqt5websockets5.symbols.
   * Add support for nodoc build profile.
   * Use dh_auto_configure provided by debhelper (closes: #883970).
+  * Bump Standards-Version to 4.9.3, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Feb 2018 12:27:41 +0300
 
