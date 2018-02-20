@@ -6,6 +6,7 @@ qtwebsockets-opensource-src (5.10.1-1) UNRELEASED; urgency=medium
   * Bump Qt build-dependencies to 5.10.1.
   * Update Vcs fields for migration to salsa.debian.org.
   * Drop not needed libssl1.0-dev build-dependency (closes: #859673).
+  * Add Qt_5.10 version tag to debian/libqt5websockets5.symbols.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Feb 2018 12:27:41 +0300
 
