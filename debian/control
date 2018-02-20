@@ -17,9 +17,9 @@ Build-Depends: debhelper (>= 10.3),
                qtdeclarative5-private-dev (>= 5.10.1~),
                xauth,
                xvfb
-Build-Depends-Indep: libqt5sql5-sqlite (>= 5.10.1+dfsg~),
-                     qtbase5-doc-html (>= 5.10.1+dfsg~),
-                     qttools5-dev-tools (>= 5.10.1~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.10.1+dfsg~) <!nodoc>,
+                     qtbase5-doc-html (>= 5.10.1+dfsg~) <!nodoc>,
+                     qttools5-dev-tools (>= 5.10.1~) <!nodoc>
 Standards-Version: 4.1.1
 Homepage: https://qt.io/
 Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtwebsockets.git
@@ -90,6 +90,7 @@ Description: Examples for Qt 5 Web Sockets module
  This package contains examples for the Qt 5 Web Sockets library.
 
 Package: qtwebsockets5-doc
+Build-Profiles: <!nodoc>
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
@@ -101,6 +102,7 @@ Description: Qt 5 Web Sockets documentation
  library.
 
 Package: qtwebsockets5-doc-html
+Build-Profiles: <!nodoc>
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
