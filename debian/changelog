@@ -1,6 +1,5 @@
-qtwebsockets-opensource-src (5.10.1-1) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.10.1-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Update debian/watch for the new upstream tarballs naming scheme.
   * Bump Qt build-dependencies to 5.10.1.
@@ -11,7 +10,7 @@ qtwebsockets-opensource-src (5.10.1-1) UNRELEASED; urgency=medium
   * Use dh_auto_configure provided by debhelper (closes: #883970).
   * Bump Standards-Version to 4.9.3, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Feb 2018 12:27:41 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 20 Feb 2018 17:48:13 +0300
 
 qtwebsockets-opensource-src (5.9.2-3) unstable; urgency=medium
 
