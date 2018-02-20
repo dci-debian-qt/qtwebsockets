@@ -11,14 +11,13 @@ Uploaders: Sune Vuorela <debian@pusling.com>,
 Build-Depends: debhelper (>= 10.9.2~),
                pkg-kde-tools,
                qml-module-qtquick2,
-               qml-module-qttest,
+               qml-module-qttest (>= 5.10.1-2~),
                qtbase5-private-dev (>= 5.10.1+dfsg~),
                qtdeclarative5-dev (>= 5.10.1~),
                qtdeclarative5-private-dev (>= 5.10.1~),
                xauth,
                xvfb
-Build-Depends-Indep: libqt5sql5-sqlite (>= 5.10.1+dfsg~) <!nodoc>,
-                     qtbase5-doc-html (>= 5.10.1+dfsg~) <!nodoc>,
+Build-Depends-Indep: qtbase5-doc-html (>= 5.10.1+dfsg~) <!nodoc>,
                      qttools5-dev-tools (>= 5.10.1~) <!nodoc>
 Standards-Version: 4.1.3
 Homepage: https://qt.io/
