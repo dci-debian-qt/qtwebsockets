@@ -1,3 +1,17 @@
+qtwebsockets-opensource-src (5.10.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update debian/watch for the new upstream tarballs naming scheme.
+  * Bump Qt build-dependencies to 5.10.1.
+  * Update Vcs fields for migration to salsa.debian.org.
+  * Drop not needed libssl1.0-dev build-dependency (closes: #859673).
+  * Add Qt_5.10 version tag to debian/libqt5websockets5.symbols.
+  * Add support for nodoc build profile.
+  * Use dh_auto_configure provided by debhelper (closes: #883970).
+  * Bump Standards-Version to 4.9.3, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 20 Feb 2018 17:48:13 +0300
+
 qtwebsockets-opensource-src (5.10.0-0neon) UNRELEASED; urgency=medium
 
   * 5.10
