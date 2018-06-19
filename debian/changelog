@@ -3,6 +3,7 @@ qtwebsockets-opensource-src (5.11.0-1) UNRELEASED; urgency=medium
   [ Simon Quigley ]
   * New upstream release
   * Bump Standards-version to 4.1.4, no changes needed.
+  * Bump debhelper compat to 11, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 18 Jun 2018 20:04:50 -0400
 
