@@ -1,3 +1,28 @@
+qtwebsockets-opensource-src (5.11.1-2) experimental; urgency=medium
+
+  * Remove the dbgsym migration section of debian/rules; it isn't needed
+    anymore.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 23 Jun 2018 20:11:35 -0500
+
+qtwebsockets-opensource-src (5.11.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump build dependencies to 5.11.1.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 19 Jun 2018 18:43:45 -0500
+
+qtwebsockets-opensource-src (5.11.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * Bump Standards-version to 4.1.4, no changes needed.
+  * Bump debhelper compat to 11, no changes needed.
+  * Bump build dependencies to 5.11.0.
+  * Update symbols from build logs.
+  * Fix insecure-copyright-format-uri.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 18 Jun 2018 21:49:16 -0400
+
 qtwebsockets-opensource-src (5.11.0-0neon) UNRELEASED; urgency=medium
 
   * Release 5.11 to neon
