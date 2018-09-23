@@ -5,6 +5,7 @@ qtwebsockets-opensource-src (5.11.2-1) UNRELEASED; urgency=medium
   * Bump Qt build-dependencies to 5.11.2.
   * Update debian/copyright.
   * Make tests failures fatal on mips and mips64el. They pass currently.
+  * Bump Standards-Version to 4.2.1, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 23 Sep 2018 13:46:00 +0300
 
