@@ -8,8 +8,9 @@ Author: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Forwarded: not-needed
 
 ---
- tests/auto/websockets/qwebsocket/tst_qwebsocket.cpp |    4 ++++
- 1 file changed, 4 insertions(+)
+ tests/auto/websockets/qwebsocket/tst_qwebsocket.cpp             |    4 ++++
+ tests/auto/websockets/qwebsocketserver/tst_qwebsocketserver.cpp |    2 ++
+ 2 files changed, 6 insertions(+)
 
 --- a/tests/auto/websockets/qwebsocket/tst_qwebsocket.cpp
 +++ b/tests/auto/websockets/qwebsocket/tst_qwebsocket.cpp
@@ -24,4 +25,15 @@ Forwarded: not-needed
 +    QEXPECT_FAIL("", "On Debian's buildds there might not be an available network", Continue);
      QCOMPARE(socket.errorString(), QStringLiteral("Host not found"));
  }
+ 
+--- a/tests/auto/websockets/qwebsocketserver/tst_qwebsocketserver.cpp
++++ b/tests/auto/websockets/qwebsocketserver/tst_qwebsocketserver.cpp
+@@ -369,6 +369,8 @@ void tst_QWebSocketServer::tst_preShared
+     if (m_shouldSkipUnsupportedIpv6Test)
+         QSKIP("Syscalls needed for ipv6 sockoptions missing functionality");
+ 
++    QSKIP("Debian buildds might not have an internet connection.");
++
+ #ifndef QT_NO_OPENSSL
+     QWebSocketServer server(QString(), QWebSocketServer::SecureMode);
  
