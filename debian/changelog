@@ -1,4 +1,8 @@
-qtwebsockets-opensource-src (5.11.2-3) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.11.3-1) UNRELEASED; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
+    - Bump Qt build dependencies.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 08 Dec 2018 23:05:59 -0300
 
