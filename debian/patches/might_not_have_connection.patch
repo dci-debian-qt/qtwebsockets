@@ -1,0 +1,23 @@
+Description: expect a failure while trying to acces network
+ Debian buildds might not have a network available, so this
+ test might fail.
+ .
+ Mark the test as expected failure, so we can log wether it
+ suceeded or not, but without failing to build the package.
+Author: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Forwarded: not-needed
+
+---
+ tests/auto/websockets/qwebsocket/tst_qwebsocket.cpp |    1 +
+ 1 file changed, 1 insertion(+)
+
+--- a/tests/auto/websockets/qwebsocket/tst_qwebsocket.cpp
++++ b/tests/auto/websockets/qwebsocket/tst_qwebsocket.cpp
+@@ -574,6 +574,7 @@ void tst_QWebSocket::tst_errorString()
+     QAbstractSocket::SocketError socketError =
+             qvariant_cast<QAbstractSocket::SocketError>(arguments.at(0));
+     QCOMPARE(socketError, QAbstractSocket::HostNotFoundError);
++    QEXPECT_FAIL("", "On Debian's buildds there might not be an available network", Continue);
+     QCOMPARE(socket.errorString(), QStringLiteral("Host not found"));
+ }
+ 

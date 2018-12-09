@@ -3,6 +3,8 @@ qtwebsockets-opensource-src (5.11.3-1) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
     - Bump Qt build dependencies.
+  * Add might_not_have_connection.patch to expect a failure on a test, Debian
+    buildds might not have an internet connection.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 08 Dec 2018 23:05:59 -0300
 
