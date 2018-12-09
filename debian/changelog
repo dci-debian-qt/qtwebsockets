@@ -1,3 +1,8 @@
+qtwebsockets-opensource-src (5.11.3-3) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 09 Dec 2018 12:49:24 -0300
+
 qtwebsockets-opensource-src (5.11.3-2) experimental; urgency=medium
 
   * Remove patches applied upstream. It seems my chroot is not configured as
