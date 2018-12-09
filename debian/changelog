@@ -1,10 +1,9 @@
-qtwebsockets-opensource-src (5.11.3-3) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.11.3-3) experimental; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add skip_test_failing_on_chroots.patch. This test really fails on the
     buildds but not on a normal installation.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 09 Dec 2018 12:49:24 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 09 Dec 2018 13:01:22 -0300
 
 qtwebsockets-opensource-src (5.11.3-2) experimental; urgency=medium
 
