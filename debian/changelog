@@ -1,3 +1,10 @@
+qtwebsockets-opensource-src (5.11.3-4) UNRELEASED; urgency=medium
+
+  [ Simon Quigley ]
+  * Change my email to tsimonq2@debian.org now that I am a Debian Developer.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 24 Dec 2018 01:30:40 -0600
+
 qtwebsockets-opensource-src (5.11.3-3) experimental; urgency=medium
 
   * Add skip_test_failing_on_chroots.patch. This test really fails on the
