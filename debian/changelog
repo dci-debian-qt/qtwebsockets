@@ -1,10 +1,13 @@
-qtwebsockets-opensource-src (5.11.3-4) UNRELEASED; urgency=medium
+qtwebsockets-opensource-src (5.11.3-4) unstable; urgency=medium
 
   [ Simon Quigley ]
   * Change my email to tsimonq2@debian.org now that I am a Debian Developer.
   * Bump Standards-version to 4.3.0, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 24 Dec 2018 01:30:40 -0600
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 26 Dec 2018 16:27:00 -0300
 
 qtwebsockets-opensource-src (5.11.3-3) experimental; urgency=medium
 
