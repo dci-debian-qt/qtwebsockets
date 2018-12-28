@@ -1,3 +1,7 @@
+qtwebsockets-opensource-src (5.11.3-5) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 Dec 2018 15:30:20 -0300
+
 qtwebsockets-opensource-src (5.11.3-4) unstable; urgency=medium
 
   [ Simon Quigley ]
